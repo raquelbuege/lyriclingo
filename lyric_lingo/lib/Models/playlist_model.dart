@@ -1,7 +1,7 @@
 class PlaylistModel{
   String id;
   String name;
-  String numberOftracks;
+  int numberOftracks;
   String currentSong;
   String previousSong;
   String nextSong;
