@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lyric_lingo/Screens/home_page_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'LyricLingo',
       theme: ThemeData(
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(fontFamily: 'Helvetica'),
+        ),
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -31,7 +35,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePageView(),
     );
   }
 }
