@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Repository/spotify_repository';
+import 'package:lyric_lingo/repository/spotify_repository.dart';
 import 'Screens/home.dart';
 
 
@@ -48,11 +48,12 @@ class ConnectionSpotifyPageState extends State<ConnectionSpotify> {
   //calling the authenicate and log in functionalities in spotify repo that then connects to main activity in android/app
   Future<void> spotifyAuthentication() async {
     try {
-      await spotifyRepository.authenticate();
+      await spotifyRepository.authenticateConnection();
       
       setState(() {
         // https://alan.app/docs/tutorials/flutter/navigating-flutter/
         Navigator.pushNamed(context, '/second');
+        //spotifyRepository.generatePreference();
       });
      
     } catch (e) {

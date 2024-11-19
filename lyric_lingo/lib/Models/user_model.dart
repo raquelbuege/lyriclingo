@@ -10,6 +10,7 @@ class UserModel{
   String nativeLanguage;
   String targetLanguage;
   List<PlaylistModel>? playlists;
+  List<String>? genrePreferences;
 
   UserModel({
     required this.name,
