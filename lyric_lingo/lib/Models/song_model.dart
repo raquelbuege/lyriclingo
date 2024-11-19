@@ -1,4 +1,4 @@
-class SongModel {
+class Song {
   int id;
   String name;
   String language;
@@ -6,8 +6,9 @@ class SongModel {
   double duration;  // Using double instead of Float for Dart
   bool explicit;
   List<String> lyrics;
+  String cover;
 
-  SongModel({
+  Song ({
     required this.id,
     required this.name,
     required this.language,
@@ -15,6 +16,7 @@ class SongModel {
     required this.duration,
     required this.explicit,
     required this.lyrics,
+    required this.cover,
   });
 
   Map<String, dynamic> toJson() => {
@@ -25,9 +27,10 @@ class SongModel {
     'duration': duration,
     'explicit': explicit,
     'lyrics': lyrics,
+    'cover' : cover,
   };
 
-  factory SongModel.fromJson(Map<String, dynamic> json) => SongModel(
+  factory Song.fromJson(Map<String, dynamic> json) => Song(
     id: json['id'],
     name: json['name'],
     language: json['language'],
@@ -35,5 +38,6 @@ class SongModel {
     duration: (json['duration']).toDouble(),
     explicit: json['explicit'],
     lyrics: List<String>.from(json['lyrics']),
+    cover: json['cover'],
   );
 }
