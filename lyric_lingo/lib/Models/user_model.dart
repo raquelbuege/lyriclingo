@@ -6,9 +6,11 @@ class UserModel{
   String name;
   String spotifyUsername;
   String spotifypsw;
+  String? userRefreshToken; //used to keep user logged in if they have previously
   String nativeLanguage;
   String targetLanguage;
   List<PlaylistModel>? playlists;
+  List<String>? genrePreferences;
 
   UserModel({
     required this.name,
