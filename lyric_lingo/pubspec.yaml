@@ -30,11 +30,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
+  spotify_sdk: ^3.0.2
 
 dev_dependencies:
   flutter_test:
@@ -65,10 +69,10 @@ flutter:
 
   assets:
     - assets/lyric_lingo_logo.png
-    - assets\Images\album1.png
-    - assets\Images\album2.png
-    - assets\Images\album3.png
-    - assets\Images\album4.png
+    - assets/Images/album1.png
+    - assets/Images/album2.png
+    - assets/Images/album3.png
+    - assets/Images/album4.png
 
   fonts:
     - family: Coolvetica
@@ -103,3 +107,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  # spotify_sdk: ^3.0.2
