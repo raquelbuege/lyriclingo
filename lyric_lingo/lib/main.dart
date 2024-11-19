@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lyric_lingo/repository/spotify_repository.dart';
-import 'Screens/home.dart';
+import 'Screens/home_page_view.dart';
 
 
 void main() {
@@ -53,7 +53,6 @@ class ConnectionSpotifyPageState extends State<ConnectionSpotify> {
       setState(() {
         // https://alan.app/docs/tutorials/flutter/navigating-flutter/
         Navigator.pushNamed(context, '/second');
-        //spotifyRepository.generatePreference();
       });
      
     } catch (e) {

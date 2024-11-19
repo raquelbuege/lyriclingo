@@ -1,5 +1,4 @@
 import 'package:flutter/services.dart';
-import 'package:spotify_sdk/spotify_sdk.dart';
 import 'dart:convert';
 
 import 'dart:async';
@@ -61,6 +60,7 @@ class SpotifyRepository{
     }catch (e){
       print("errorrrr");
     }
+    return null;
   }
     //use user\me\top\type(artist), 5 
     //for each artist we do artist.genre => add to user model genres

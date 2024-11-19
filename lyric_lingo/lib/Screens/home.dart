@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lyric_lingo/Widgets/countdown_timer.dart';
 
-class HomePageView extends StatelessWidget {
-  const HomePageView({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
