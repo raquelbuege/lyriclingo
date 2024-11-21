@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lyric_lingo/Screens/home_page_view.dart';
+import 'package:lyric_lingo/Screens/weekly_playlist.dart';
 import 'package:lyric_lingo/repository/spotify_repository.dart';
-import 'Screens/home.dart';
-
 
 void main() {
   runApp(const MyApp());

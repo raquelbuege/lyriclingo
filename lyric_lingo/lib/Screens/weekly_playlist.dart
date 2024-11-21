@@ -13,13 +13,14 @@ class PlaylistView extends StatefulWidget {
 
 class _PlaylistViewState extends State<PlaylistView> {
 
-  late PlaylistViewModel _viewModel;
+  late ConnectionSpotifyPageState _viewModel;
 
   @override
   void initState() {
     super.initState();
-    _viewModel = PlaylistViewModel();
-    _viewModel.loadPlaylist();
+    _viewModel = ConnectionSpotifyPageState();
+    _viewModel.getPlaylistPreferences();
+    // _viewModel.loadPlaylist();
   }
 
   // Helper function to calculate week of the year
@@ -28,14 +29,17 @@ class _PlaylistViewState extends State<PlaylistView> {
   }
 
   // This function could be called periodically to refresh the playlist
-  void _playPlaylist() {
+  String _playPlaylist() {
+    _viewModel.getPlaylistPreferences();
+    return "hi";
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Weekly Playlist #${_viewModel.playlist.id}", style: const TextStyle(fontFamily: 'Coolvetica', fontSize: 50),),
+        title: const Text("SONGS"),
+        // Text("Weekly Playlist #${_viewModel.playlist.id}", style: const TextStyle(fontFamily: 'Coolvetica', fontSize: 50),),
         backgroundColor: const Color.fromARGB(255, 53, 45, 57),
         actions: [
           IconButton(
@@ -44,8 +48,8 @@ class _PlaylistViewState extends State<PlaylistView> {
           ),
         ],
       ),
-      body: 
-      PlaylistItem(playlist: _viewModel.playlist)
+      body: Text(_playPlaylist())
+      // PlaylistItem(playlist: _viewModel.playlist)
     );
   }
 }

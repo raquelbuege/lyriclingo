@@ -73,6 +73,7 @@ flutter:
     - assets/Images/album2.png
     - assets/Images/album3.png
     - assets/Images/album4.png
+    - assets/Images/Kali.png
 
   fonts:
     - family: Coolvetica
