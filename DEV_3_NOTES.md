@@ -1,9 +1,8 @@
-Dev 3
-Group 1
-
-Raquel Buege
-Anna Plazek
-Dorothy Crow
+# Dev 3
+## Group 1
+- Raquel Buege
+- Anna Plazek
+- Dorothy Crow
 
 ## Overview
 Teams should provide a written explanation of the tasks completed, how to execute their software, and brief instructions on how to perform the tasks. If the interface design has changed from previous deliverables, an explanation should be provided with clear description of why the design had to change, the redesign process followed, and how the new design satisfies the constraint encountered.
