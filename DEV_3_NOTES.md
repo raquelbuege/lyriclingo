@@ -28,6 +28,16 @@ Despite feeling lost we persevered, watching many videos, and looking many thing
 Also although Dev 3 says that "extensive back-end supporting software and/or web services" is not required or expected, it is essential for creating our main key tasks. During this process of learning through experience we also realized the Spotify package, while coming in many forms, also has different functionality based on its form. For example, the Spotify Web API has additional abilities to request user information which is essential to our app's key tasks.
 
 ![Alt text](spotifyAuth.png)
+
+### Navigation
+The bottom navigation bar is fully functional with users being able to click and be directed to four different pages:
+- homepage
+- search
+- exercises
+- profile
+  
+While these pages are not fully fleshed out, the beginning of their foundations are beginning to appear in terms of layout.
+
 ### Home Page View
 While the homepage view is not a task per se, it is the heart of our application. When the user opens the app and is logged in, they will be met with the LyricLingo homepage. This view displays:
 
@@ -54,11 +64,3 @@ We have mapped out the framework for the interface and how we will generate thes
 - Search for another track with that same information but in another language
 - Create 1:1 mappings with the tracks that the user is currently enjoying
 ![Alt text](weeklyPlaylistCode.png)
-
-### Navigation
-The bottom navigation bar is fully functional with users being able to click and be directed to four different pages:
-- homepage
-- search
-- exercises
-- profile
-While these pages are not fully fleshed out, the beginning of their foundations are beginning to appear in terms of layout.
