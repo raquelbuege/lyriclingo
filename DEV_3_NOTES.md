@@ -23,6 +23,8 @@ These elements are all essential for making requests. However, immediately attac
 The android instructions were very confusing for us because while seeming easy at first they quickly became us having to adjust native Android files like the AndriodManifest.xml and MainActivity.kt. This was where a big time suck happened because we have never done anything remotely similar to this and Kotlin was never mentioned in demos in class (we thought that was because the demos in class were done in IOS).
 Despite feeling lost we persevered, watching many videos, and looking many things up online until we finally were able to have the first task of the app route to the Spotify login page, allow users to log in, and then redirect to our homepage. As we mentioned before this may not seem like a huge step but the process for getting it to work was very exhaustive.
 Also although Dev 3 says that "extensive back-end supporting software and/or web services" is not required or expected, it is essential for creating our main key tasks. During this process of learning through experience we also realized the Spotify package, while coming in many forms, also has different functionality based on its form. For example, the Spotify Web API has additional abilities to request user information which is essential to our app's key tasks.
+
+![Alt text](spotifyAuth.png)
 ### Home Page View
 While the homepage view is not a task per se, it is the heart of our application. When the user opens the app and is logged in, they will be met with the LyricLingo homepage. This view displays:
 
