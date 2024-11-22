@@ -54,3 +54,11 @@ We have mapped out the framework for the interface and how we will generate thes
 - Search for another track with that same information but in another language
 - Create 1:1 mappings with the tracks that the user is currently enjoying
 ![Alt text](weeklyPlaylistCode.png)
+
+### Navigation
+The bottom navigation bar is fully functional with users being able to click and be directed to four different pages:
+- homepage
+- search
+- exercises
+- profile
+While these pages are not fully fleshed out, the beginning of their foundations are beginning to appear in terms of layout.
