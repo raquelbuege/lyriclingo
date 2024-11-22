@@ -34,6 +34,9 @@ While the homepage view is not a task per se, it is the heart of our application
 - Bottom navigation bar for search page, exercises tab, and profile
 
 After exactly a week passes, a new playlist of recommendations will drop and the timer will be reset. Our team still has to work out how we want to handle data storage across user sessions as the timer currently resets each time the app is reloaded.
+
+![Alt text](Screenshot 2024-11-20 215443.png)
+
 ### Weekly Playlist
 Our initial troubles with the Spotify API blocked our progress on the majority of our key tasks, especially our curated playlist feature. Now that we have resolved those issues, the view frameworks developed to display that information fetched from Spotify can now be incorporated into our app.
 When the user clicks on the arrow icon in the weekly playlist container on the homepage, the above view should be returned. This view will feature:
